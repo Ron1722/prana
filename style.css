@@ -1,0 +1,71 @@
+
+body{
+    margin: 0px;
+    background-image: url("fabrizio-conti-1453997-unsplash.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.sticky{
+    position: fixed;
+    top:0px;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgba(229, 250, 246,0.7);
+    font-size: 2rem;
+}
+
+.name{
+    text-align: center;
+    color: #E48E38;
+    margin-top: 133px;
+}
+
+h1{
+    margin: 4% 0;
+    font-size: 130px;
+}
+.btn{
+    text-align: center;
+    margin-top: 10%;
+}
+button{
+    border: 1px solid #BBF05A;
+    border-radius: 10px;
+    background-color: rgba(204, 241, 110, 0.6);
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: rgba(204, 241, 110, 1);
+    cursor: pointer;
+}
+
+.name p span{
+    color: blue;
+}
+
+.name p{
+    color: black;
+    background-color: rgba(242,242,100,0.3);
+    width: 95%;
+    margin: auto;
+    padding: 5px;
+    font-size: 1.9em;
+}
+@media only screen and (max-width: 600px){
+    .photo{
+        background-image: url("fabrizio-conti-1453997-unsplash.jpg")
+    }
+}
