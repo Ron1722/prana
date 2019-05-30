@@ -8,6 +8,22 @@ body{
     background-repeat: no-repeat;
 }
 
+/***********************************************************************
+ *  Nav Bar
+ **********************************************************************/
+
+ .zone {
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;   
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
 
 
 .sticky{
@@ -18,10 +34,25 @@ body{
 
 .container{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: rgba(229, 250, 246,0.7);
-    font-size: 2rem;
+    list-style: none;
+    margin: 0;
+    font-size: 5vh;
+    background: rgba(229, 250, 246,0.7);
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+li {
+    padding: 20px;
+}
+
+.push {
+    margin-left: auto;
 }
 
 .name{
@@ -30,10 +61,10 @@ body{
     margin-top: 133px;
 }
 
-h1{
-    margin: 4% 0;
-    font-size: 130px;
+.name h1{
+    font-size:9vw;
 }
+
 .btn{
     text-align: center;
     margin-top: 10%;
@@ -63,9 +94,4 @@ button:hover{
     margin: auto;
     padding: 5px;
     font-size: 1.9em;
-}
-@media only screen and (max-width: 600px){
-    .photo{
-        background-image: url("fabrizio-conti-1453997-unsplash.jpg")
-    }
 }
