@@ -95,3 +95,41 @@ button:hover{
     padding: 5px;
     font-size: 1.9em;
 }
+
+.marquee {
+    display: block;
+    padding: 10px;
+    background: black;
+    overflow: hidden;
+    position: relative;
+}
+span:hover{
+    color: #FFFF4B;
+}
+.left-right {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    color: darkgoldenrod;
+    overflow: hidden;
+    animation: skills-motion 40s normal infinite;
+    -webkit-animation: skills-motion 40s normal infinite;
+    animation-timing-function: linear;
+    margin: 5px;
+}
+.left-right:hover{
+    -webkit-animation-play-state:paused;
+    animation-play-state:paused;
+    cursor: pointer;
+  }
+  
+  @keyframes skills-motion {
+    from {left: -100%;}
+    to {left: 100%;}
+  }
+
+  /* Safari 4.0 - 8.0 */
+@-webkit-keyframes skills-motion {
+    from {left: -100%;}
+    to {left: 100%;}
+  }
